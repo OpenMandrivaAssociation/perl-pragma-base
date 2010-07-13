@@ -3,7 +3,7 @@
 
 Name:       perl-pragma-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Compile-time class fields
 License:    GPL+ or Artistic
