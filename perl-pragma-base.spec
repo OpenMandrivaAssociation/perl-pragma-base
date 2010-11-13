@@ -1,9 +1,9 @@
 %define upstream_name    base
-%define upstream_version 2.14
+%define upstream_version 2.15
 
 Name:       perl-pragma-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Compile-time class fields
 License:    GPL+ or Artistic
