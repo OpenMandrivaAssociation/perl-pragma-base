@@ -1,20 +1,20 @@
 %define upstream_name    base
 %define upstream_version 2.15
 
-Name:       perl-pragma-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Name:		perl-pragma-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	3
 
-Summary:    Compile-time class fields
-License:    GPL+ or Artistic
-Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Summary:	Compile-time class fields
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires: perl(Test::More)
-BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
-Provides: perl(base)
+BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
+BuildArch:	noarch
+Provides:	perl(base)
 
 %description
 Unless you are using the 'fields' pragma, consider this module discouraged
@@ -34,24 +34,37 @@ from those modules at the same time. Roughly similar in effect to
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+perl Makefile.PL INSTALLDIRS=vendor
+%make
 
 %check
-%{make} test
+%make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes
 %{_mandir}/man3/*
-%perl_vendorlib/*
+%{perl_vendorlib}/*
+
+%changelog
+* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 2.150.0-2mdv2011.0
++ Revision: 656992
+- rebuild for updated spec-helper
+
+* Sat Nov 13 2010 Jérôme Quelin <jquelin@mandriva.org> 2.150.0-1mdv2011.0
++ Revision: 597199
+- update to 2.15
+
+* Tue Jul 13 2010 Jérôme Quelin <jquelin@mandriva.org> 2.140.0-2mdv2011.0
++ Revision: 552183
+- rebuild
+
+* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 2.140.0-1mdv2010.0
++ Revision: 395228
+- import perl-pragma-base
 
 
+* Sun Jul 12 2009 cpan2dist 2.14-1mdv
+- initial mdv release, generated with cpan2dist
