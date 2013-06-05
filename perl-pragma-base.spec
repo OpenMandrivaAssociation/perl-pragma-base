@@ -2,14 +2,14 @@
 %define upstream_version 2.15
 
 Name:		perl-pragma-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 2.18
+Release:	1
 
 Summary:	Compile-time class fields
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RG/RGARCIA/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/fields/RGARCIA/base-2.18.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -68,3 +68,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Jul 12 2009 cpan2dist 2.14-1mdv
 - initial mdv release, generated with cpan2dist
+
