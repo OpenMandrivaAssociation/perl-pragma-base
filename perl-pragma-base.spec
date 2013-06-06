@@ -8,11 +8,7 @@ Summary:	Compile-time class fields
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-<<<<<<< HEAD
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RG/RGARCIA/%{upstream_name}-%{upstream_version}.tar.gz
-=======
 Source0:	http://www.cpan.org/modules/by-module/fields/RGARCIA/base-2.18.tar.gz
->>>>>>> auto_update
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
