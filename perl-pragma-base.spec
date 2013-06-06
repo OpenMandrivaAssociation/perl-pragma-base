@@ -1,6 +1,5 @@
 %define upstream_name    base
-%define upstream_version 2.15
-
+%define upstream_version 2.18
 Name:		perl-pragma-%{upstream_name}
 Version:	%perl_convert_version 2.18
 Release:	1
