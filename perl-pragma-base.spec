@@ -2,7 +2,7 @@
 %define upstream_version 2.18
 Name:		perl-pragma-%{upstream_name}
 Version:	%perl_convert_version 2.18
-Release:	1
+Release:	2
 
 Summary:	Compile-time class fields
 License:	GPL+ or Artistic
