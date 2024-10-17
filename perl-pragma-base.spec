@@ -7,7 +7,7 @@ Release:	3
 Summary:	Compile-time class fields
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/fields/RGARCIA/base-2.18.tar.gz
 
 BuildRequires:	perl-devel
