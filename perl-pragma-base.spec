@@ -1,14 +1,14 @@
 %define upstream_name    base
-%define upstream_version 2.18
+%define upstream_version 2.23
 Name:		perl-pragma-%{upstream_name}
-Version:	%perl_convert_version 2.18
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Compile-time class fields
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/fields/RGARCIA/base-2.18.tar.gz
+Url:		https://metacpan.org/dist/base
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/base-2.23.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
