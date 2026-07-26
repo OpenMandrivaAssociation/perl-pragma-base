@@ -1,8 +1,7 @@
 %define upstream_name    base
-%define upstream_version 2.23
 Name:		perl-pragma-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.23
+Release:	2
 
 Summary:	Compile-time class fields
 License:	GPL+ or Artistic
@@ -31,7 +30,7 @@ from those modules at the same time. Roughly similar in effect to
     }
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
