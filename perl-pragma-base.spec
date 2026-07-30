@@ -1,7 +1,7 @@
 %define upstream_name    base
 Name:		perl-pragma-%{upstream_name}
 Version:	2.23
-Release:	2
+Release:	1
 
 Summary:	Compile-time class fields
 License:	GPL+ or Artistic
@@ -46,25 +46,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 2.150.0-2mdv2011.0
-+ Revision: 656992
-- rebuild for updated spec-helper
-
-* Sat Nov 13 2010 Jérôme Quelin <jquelin@mandriva.org> 2.150.0-1mdv2011.0
-+ Revision: 597199
-- update to 2.15
-
-* Tue Jul 13 2010 Jérôme Quelin <jquelin@mandriva.org> 2.140.0-2mdv2011.0
-+ Revision: 552183
-- rebuild
-
-* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 2.140.0-1mdv2010.0
-+ Revision: 395228
-- import perl-pragma-base
-
-
-* Sun Jul 12 2009 cpan2dist 2.14-1mdv
-- initial mdv release, generated with cpan2dist
 
